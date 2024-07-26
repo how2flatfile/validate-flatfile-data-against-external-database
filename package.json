@@ -1,0 +1,28 @@
+{
+  "name": "gettingstarted",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "flatfile develop typescript/index.ts",
+    "deploy": "flatfile deploy typescript/index.ts",
+    "create-workbook": "bash ./scripts/create-workbook.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@flatfile/api": "1.9.7",
+    "@flatfile/listener": "1.0.5",
+    "@flatfile/plugin-record-hook": "^1.6.0",
+    "axios": "^1.7.2",
+    "base64-js": "^1.5.1",
+    "flatfile": "^3.8.0",
+    "google-auth-library": "^9.11.0",
+    "googleapis": "^140.0.1",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.0"
+  }
+}
