@@ -36,6 +36,8 @@ export default function flatfileEventListener(listener: Client) {
           name: "Workbook One",
           // We defined the structure of workbookOne in the "workbook.ts" file and imported it here to the "index.ts" file
           sheets: workbookOne,
+          // This ensures that all actions on this workbook remain unclickable while validations are in process
+          settings: { trackChanges: true },
           // Creating a workbook-level Submit button
           actions: [
             {
@@ -61,7 +63,7 @@ export default function flatfileEventListener(listener: Client) {
                 { type: "hasAllValid" }
               ]
             },
-          ]
+          ],
         });
 
         // Third, we complete a job once a Space, a Workbook with its Sheet, and a Submit button are created
